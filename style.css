@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+}
+.forest-bg {
+    background-image: url('http://static.photos/nature/1200x630/42');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.card-glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.nav-link {
+    position: relative;
+}
+.nav-link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #4ade80;
+    transition: width 0.3s ease;
+}
+.nav-link:hover:after {
+    width: 100%;
+}
+.skill-pill {
+    transition: all 0.3s ease;
+}
+.skill-pill:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
