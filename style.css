@@ -39,3 +39,8 @@ body {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
+.skill-pill:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    background-color: #d1fae5; /* A light green to make it pop */
+}

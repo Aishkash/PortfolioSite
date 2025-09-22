@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="text-gray-800">
-    <nav class="fixed w-full z-50 bg-white bg-opacity-90 shadow-sm">
+    <nav class="fixed w-full z-50 bg-black bg-opacity-90 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
@@ -34,23 +34,26 @@
         </div>
     </nav>
 
-    <section id="home" class="forest-bg min-h-screen flex items-center justify-center relative overflow-hidden">
-        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden bg-black text-white">
+        <div id="particles-js" class="absolute inset-0 z-0"></div>
+    
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10 relative">
             <div class="text-center" data-aos="fade-up">
-                <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Aishwarya Kashyap</h1>
-                <h2 class="text-xl md:text-2xl text-gray-200 mb-8">Computer Science Engineer | Data Analyst | Web Developer</h2>
-                <div class="flex justify-center space-x-4">
-                    <a href="#contact" class="px-6 py-3 bg-green-600 text-white rounded-full hover:bg-green-700 transition duration-300 flex items-center">
-                        <i data-feather="mail" class="mr-2"></i> Contact Me
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-4 drop-shadow-lg animate-fade-in">Aishwarya Kashyap</h1>
+                <h2 class="text-xl md:text-2xl text-gray-300 mb-8 animate-fade-in-delay">Computer Science Engineer | Data Analyst | Web Developer</h2>
+                <div class="flex justify-center space-x-4 mt-12 animate-slide-up">
+                    <a href="#contact" class="px-8 py-4 bg-green-500 text-white rounded-full font-semibold hover:bg-green-600 transition-all duration-300 transform hover:scale-105 shadow-xl flex items-center">
+                        <i data-feather="mail" class="mr-2 h-5 w-5"></i> Contact Me
                     </a>
-                    <a href="#projects" class="px-6 py-3 bg-white text-green-700 rounded-full hover:bg-gray-100 transition duration-300 flex items-center">
-                        <i data-feather="briefcase" class="mr-2"></i> My Work
+                    <a href="#projects" class="px-8 py-4 bg-transparent border-2 border-white text-white rounded-full font-semibold hover:bg-white hover:text-green-700 transition-all duration-300 transform hover:scale-105 shadow-xl flex items-center">
+                        <i data-feather="briefcase" class="mr-2 h-5 w-5"></i> My Work
                     </a>
                 </div>
             </div>
         </div>
     </section>
+    
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
     <section id="about" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -90,15 +93,15 @@
                         </div>
                     </div>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-gray-700 hover:text-green-600">
+                        <a href="https://www.linkedin.com/in/aishwarya-kashyap-737a22251/" class="text-gray-700 hover:text-green-600">
                             <i data-feather="linkedin"></i>
                         </a>
-                        <a href="#" class="text-gray-700 hover:text-green-600">
+                        <a href="https://github.com/Aishkash" class="text-gray-700 hover:text-green-600">
                             <i data-feather="github"></i>
                         </a>
-                        <a href="#" class="text-gray-700 hover:text-green-600">
+                        <!-- <a href="#" class="text-gray-700 hover:text-green-600">
                             <i data-feather="twitter"></i>
-                        </a>
+                        </a> -->
                     </div>
                 </div>
             </div>
@@ -196,7 +199,7 @@
                 <div class="w-20 h-1 bg-green-500 mx-auto"></div>
             </div>
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="card-glass p-8 rounded-lg shadow-md" data-aos="fade-up">
+                <div class="card-glass p-8 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105" data-aos="fade-up">
                     <div class="flex items-center mb-4">
                         <div class="bg-green-100 p-3 rounded-full mr-4">
                             <i data-feather="bar-chart-2" class="text-green-600"></i>
@@ -210,13 +213,15 @@
                         <li>Involves cleaning data, handling missing values and visualizing trends.</li>
                         <li>Tests various regression models with python.</li>
                     </ul>
-                    <div class="flex flex-wrap gap-2">
+                    <div class="flex flex-wrap gap-2 mb-4">
                         <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Python</span>
                         <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Pandas</span>
                         <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Scikit-learn</span>
                     </div>
+                    <a href="#" class="mt-4 inline-block bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition-all duration-300 transform hover:scale-105">View Project</a>
                 </div>
-                <div class="card-glass p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
+    
+                <div class="card-glass p-8 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105" data-aos="fade-up" data-aos-delay="100">
                     <div class="flex items-center mb-4">
                         <div class="bg-green-100 p-3 rounded-full mr-4">
                             <i data-feather="printer" class="text-green-600"></i>
@@ -230,13 +235,15 @@
                         <li>Enhanced system security by incorporating user authentication and access control features.</li>
                         <li>Ensured the integrity of asset data.</li>
                     </ul>
-                    <div class="flex flex-wrap gap-2">
+                    <div class="flex flex-wrap gap-2 mb-4">
                         <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">PHP</span>
                         <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">HTML/CSS</span>
                         <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">JavaScript</span>
                     </div>
+                    <a href="#" class="mt-4 inline-block bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition-all duration-300 transform hover:scale-105">View Project</a>
                 </div>
-                <div class="card-glass p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+                
+                <div class="card-glass p-8 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105" data-aos="fade-up" data-aos-delay="200">
                     <div class="flex items-center mb-4">
                         <div class="bg-green-100 p-3 rounded-full mr-4">
                             <i data-feather="pie-chart" class="text-green-600"></i>
@@ -250,13 +257,15 @@
                         <li>Created tableau dashboards to visualize key market trends.</li>
                         <li>Provided data driven answers to business questions.</li>
                     </ul>
-                    <div class="flex flex-wrap gap-2">
+                    <div class="flex flex-wrap gap-2 mb-4">
                         <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">SQL</span>
                         <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Tableau</span>
                         <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Data Analysis</span>
                     </div>
+                    <a href="#" class="mt-4 inline-block bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition-all duration-300 transform hover:scale-105">View Project</a>
                 </div>
-                <div class="card-glass p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="300">
+                
+                <div class="card-glass p-8 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105" data-aos="fade-up" data-aos-delay="300">
                     <div class="flex items-center mb-4">
                         <div class="bg-green-100 p-3 rounded-full mr-4">
                             <i data-feather="dollar-sign" class="text-green-600"></i>
@@ -270,11 +279,12 @@
                         <li>Developed risk analytics model to help minimize financial loss in leading decision.</li>
                         <li>Used Pandas, NumPy, Matplotlib for analysis.</li>
                     </ul>
-                    <div class="flex flex-wrap gap-2">
+                    <div class="flex flex-wrap gap-2 mb-4">
                         <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Python</span>
                         <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Pandas</span>
                         <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Data Visualization</span>
                     </div>
+                    <a href="#" class="mt-4 inline-block bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition-all duration-300 transform hover:scale-105">View Project</a>
                 </div>
             </div>
         </div>
