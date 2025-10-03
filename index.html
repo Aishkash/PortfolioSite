@@ -4,468 +4,479 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aishwarya Kashyap | Portfolio</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap">
+
     <link rel="stylesheet" href="style.css">
+    
 </head>
+
 <body class="text-gray-800">
-    <nav class="fixed w-full z-50 bg-white bg-opacity-90 shadow-sm">
+    <nav class="fixed w-full z-50 bg-white bg-opacity-95 shadow-lg transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
-                    <span class="text-xl font-bold text-green-700">Aishwarya Kashyap</span>
+                    <span class="text-2xl font-extrabold text-green-700 tracking-wider">AISHWARYA</span>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#home" class="nav-link text-gray-700 hover:text-green-600">Home</a>
-                    <a href="#about" class="nav-link text-gray-700 hover:text-green-600">About</a>
-                    <a href="#experience" class="nav-link text-gray-700 hover:text-green-600">Experience</a>
-                    <a href="#projects" class="nav-link text-gray-700 hover:text-green-600">Projects</a>
-                    <a href="#contact" class="nav-link text-gray-700 hover:text-green-600">Contact</a>
+                    <a href="#home" class="nav-link text-gray-700 font-medium hover:text-green-600">Home</a>
+                    <a href="#about" class="nav-link text-gray-700 font-medium hover:text-green-600">About</a>
+                    <a href="#experience" class="nav-link text-gray-700 font-medium hover:text-green-600">Experience</a>
+                    <a href="#projects" class="nav-link text-gray-700 font-medium hover:text-green-600">Projects</a>
+                    <a href="#contact" class="nav-link text-gray-700 font-medium hover:text-green-600">Contact</a>
                 </div>
                 <div class="md:hidden flex items-center">
-                    <button class="mobile-menu-button">
-                        <i data-feather="menu"></i>
+                    <button class="mobile-menu-button p-2 rounded-md hover:bg-gray-100">
+                        <i data-feather="menu" class="w-6 h-6 text-green-700"></i>
                     </button>
                 </div>
             </div>
         </div>
+        <div class="mobile-menu hidden md:hidden absolute w-full bg-white shadow-xl">
+            <a href="#home" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50">Home</a>
+            <a href="#about" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50">About</a>
+            <a href="#experience" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50">Experience</a>
+            <a href="#projects" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50">Projects</a>
+            <a href="#contact" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50">Contact</a>
+        </div>
     </nav>
-
-    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden bg-black text-white">
-        <div id="particles-js" class="absolute inset-0 z-0"></div>
+    
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden text-white">
+        <div id="particles-js" class="absolute inset-0 z-0 opacity-50"></div>
     
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10 relative">
             <div class="text-center" data-aos="fade-up">
-                <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-4 drop-shadow-lg animate-fade-in">Aishwarya Kashyap</h1>
-                <h2 class="text-xl md:text-2xl text-gray-300 mb-8 animate-fade-in-delay">Computer Science Engineer | Data Analyst | Web Developer</h2>
-                <div class="flex justify-center space-x-4 mt-12 animate-slide-up">
-                    <a href="#contact" class="px-8 py-4 bg-green-500 text-white rounded-full font-semibold hover:bg-green-600 transition-all duration-300 transform hover:scale-105 shadow-xl flex items-center">
-                        <i data-feather="mail" class="mr-2 h-5 w-5"></i> Contact Me
+                <p class="text-xl md:text-2xl text-green-300 mb-2 font-medium">Hello, I'm</p>
+                <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-4 drop-shadow-2xl">Aishwarya Kashyap</h1>
+                <h2 class="text-2xl md:text-3xl text-gray-200 mb-8 font-light">
+                    <span class="border-b-2 border-green-400 pb-1">Computer Science Engineer</span> | 
+                    <span class="border-b-2 border-green-400 pb-1">Data Analyst</span>
+                </h2>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 mt-12">
+                    <a href="#contact" class="px-10 py-4 bg-green-500 text-white rounded-full font-semibold text-lg hover:bg-green-600 transition duration-300 shadow-2xl shadow-green-500/50 flex items-center justify-center">
+                        <i data-feather="mail" class="mr-3 h-5 w-5"></i> Hire Me
                     </a>
-                    <a href="#projects" class="px-8 py-4 bg-transparent border-2 border-white text-white rounded-full font-semibold hover:bg-white hover:text-green-700 transition-all duration-300 transform hover:scale-105 shadow-xl flex items-center">
-                        <i data-feather="briefcase" class="mr-2 h-5 w-5"></i> My Work
+                    <a href="#projects" class="px-10 py-4 bg-transparent border-2 border-white text-white rounded-full font-semibold text-lg hover:bg-white hover:text-green-700 transition duration-300 shadow-2xl flex items-center justify-center">
+                        <i data-feather="briefcase" class="mr-3 h-5 w-5"></i> View Projects
                     </a>
                 </div>
             </div>
         </div>
     </section>
     
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
-    <section id="about" class="py-20 bg-white">
+    <section id="about" class="py-24 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-gray-800 mb-2">About Me</h2>
-                <div class="w-20 h-1 bg-green-500 mx-auto"></div>
+                <h2 class="text-4xl font-extrabold text-gray-800 mb-4">About Me 🧑‍💻</h2>
+                <div class="w-16 h-1.5 bg-green-500 mx-auto rounded-full"></div>
             </div>
             <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/3 mb-8 md:mb-0" data-aos="fade-right">
-                    <div class="w-64 h-64 mx-auto rounded-full overflow-hidden border-4 border-green-500">
-                        <!-- p[ikhere] -->
-                        <img src="" alt="Profile" class="w-full h-full object-cover">
+                <div class="md:w-1/3 mb-10 md:mb-0" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="w-64 h-64 mx-auto rounded-full overflow-hidden border-8 border-white shadow-xl transition-all duration-500 hover:border-green-400">
+                        <img src="https://via.placeholder.com/256/10b981/ffffff?text=Aishwarya+Kashyap" alt="Profile" class="w-full h-full object-cover">
                     </div>
                 </div>
-                <div class="md:w-2/3 md:pl-12" data-aos="fade-left">
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Computer Science Student at Chandigarh University</h3>
-                    <p class="text-gray-600 mb-6">
-                        I'm a passionate 4th year Computer Science Engineering student with expertise in data analysis, web development, and machine learning. 
-                        My journey in tech has been fueled by curiosity and a drive to solve real-world problems through innovative solutions.
+                <div class="md:w-2/3 md:pl-16" data-aos="fade-left" data-aos-duration="1000">
+                    <p class="text-lg text-gray-700 mb-6 leading-relaxed border-l-4 border-green-500 pl-4 bg-white p-4 rounded-lg shadow-inner">
+                        I'm a passionate 4th year Computer Science Engineering student at Chandigarh University. My expertise lies in bridging the gap between data and actionable insights through **data analysis, coupled with practical skills in development and **machine learning. I'm driven by a persistent curiosity and a commitment to solving real-world challenges with innovative, data-backed solutions.
                     </p>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-                        <div class="flex items-center">
-                            <i data-feather="map-pin" class="text-green-500 mr-2"></i>
-                            <span class="text-gray-700">Jhansi, Uttar Pradesh, India</span>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+                        <div class="flex items-center text-gray-700 p-3 bg-white rounded-lg shadow-sm">
+                            <i data-feather="map-pin" class="text-green-500 mr-3 h-5 w-5"></i>
+                            <span class="font-medium">Jhansi, Uttar Pradesh, India</span>
                         </div>
-                        <div class="flex items-center">
-                            <i data-feather="mail" class="text-green-500 mr-2"></i>
-                            <span class="text-gray-700">aishwaryakashy@gmail.com</span>
+                        <div class="flex items-center text-gray-700 p-3 bg-white rounded-lg shadow-sm">
+                            <i data-feather="mail" class="text-green-500 mr-3 h-5 w-5"></i>
+                            <span class="font-medium">aishwaryakashy@gmail.com</span>
                         </div>
-                        <div class="flex items-center">
-                            <i data-feather="phone" class="text-green-500 mr-2"></i>
-                            <span class="text-gray-700">+91 9336463293</span>
+                        <div class="flex items-center text-gray-700 p-3 bg-white rounded-lg shadow-sm">
+                            <i data-feather="phone" class="text-green-500 mr-3 h-5 w-5"></i>
+                            <span class="font-medium">+91 9336463293</span>
                         </div>
-                        <div class="flex items-center">
-                            <i data-feather="award" class="text-green-500 mr-2"></i>
-                            <span class="text-gray-700">Published Research Paper on Power BI</span>
+                        <div class="flex items-center text-gray-700 p-3 bg-white rounded-lg shadow-sm">
+                            <i data-feather="award" class="text-green-500 mr-3 h-5 w-5"></i>
+                            <span class="font-medium">Published Research Paper</span>
                         </div>
                     </div>
-                    <div class="flex space-x-4">
-                        <a href="https://www.linkedin.com/in/aishwarya-kashyap-737a22251/" class="text-gray-700 hover:text-green-600">
+                    <div class="flex space-x-5">
+                        <a href="https://www.linkedin.com/in/aishwarya-kashyap-737a22251/" target="_blank" class="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center text-white hover:bg-green-600 transition transform hover:scale-110 shadow-lg">
                             <i data-feather="linkedin"></i>
                         </a>
-                        <a href="https://github.com/Aishkash" class="text-gray-700 hover:text-green-600">
+                        <a href="https://github.com/Aishkash" target="_blank" class="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center text-white hover:bg-green-600 transition transform hover:scale-110 shadow-lg">
                             <i data-feather="github"></i>
                         </a>
-                        <!-- <a href="#" class="text-gray-700 hover:text-green-600">
-                            <i data-feather="twitter"></i>
-                        </a> -->
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-16 bg-gray-50">
+    <section class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-gray-800 mb-2">Education</h2>
-                <div class="w-20 h-1 bg-green-500 mx-auto"></div>
+                <h2 class="text-4xl font-extrabold text-gray-800 mb-4">Education 🎓</h2>
+                <div class="w-16 h-1.5 bg-green-500 mx-auto rounded-full"></div>
             </div>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="card-glass p-8 rounded-lg shadow-md" data-aos="fade-up">
-                    <div class="flex items-center mb-4">
-                        <div class="bg-green-100 p-3 rounded-full mr-4">
-                            <i data-feather="book" class="text-green-600"></i>
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="card-glass p-8 rounded-xl shadow-lg" data-aos="fade-up">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-green-500 p-3 rounded-xl mr-4 flex-shrink-0">
+                            <i data-feather="book-open" class="text-white h-6 w-6"></i>
                         </div>
                         <div>
-                            <h3 class="text-xl font-semibold text-gray-800">Chandigarh University</h3>
-                            <p class="text-gray-600">Mohali, Punjab</p>
+                            <h3 class="text-2xl font-bold text-gray-800">Chandigarh University</h3>
+                            <p class="text-green-600 font-semibold">Mohali, Punjab</p>
                         </div>
                     </div>
-                    <p class="text-gray-700 mb-4">
-                        Bachelors of Engineering in Computer Science and Engineering (currently pursuing)
+                    <p class="text-gray-700 mb-2 border-l-2 border-gray-200 pl-4">
+                        **B.E. in Computer Science and Engineering** (currently pursuing)
                     </p>
-                    <p class="text-sm text-gray-500">4th Year</p>
+                    <p class="text-sm text-gray-500 font-medium">4th Year</p>
                 </div>
-                <div class="card-glass p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
-                    <div class="flex items-center mb-4">
-                        <div class="bg-green-100 p-3 rounded-full mr-4">
-                            <i data-feather="book-open" class="text-green-600"></i>
+                <div class="card-glass p-8 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="150">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-green-500 p-3 rounded-xl mr-4 flex-shrink-0">
+                            <i data-feather="bookmark" class="text-white h-6 w-6"></i>
                         </div>
                         <div>
-                            <h3 class="text-xl font-semibold text-gray-800">Mount Litra Zee School</h3>
-                            <p class="text-gray-600">Jhansi, Uttar Pradesh</p>
+                            <h3 class="text-2xl font-bold text-gray-800">Mount Litra Zee School</h3>
+                            <p class="text-green-600 font-semibold">Jhansi, Uttar Pradesh</p>
                         </div>
                     </div>
-                    <p class="text-gray-700 mb-4">
-                        Intermediate (CBSE) 2021-2022
+                    <p class="text-gray-700 mb-2 border-l-2 border-gray-200 pl-4">
+                        Intermediate (CBSE)
                     </p>
-                    <p class="text-sm text-gray-500">
-                        Represented the school in CBSE cluster in badminton till state level.
+                    <p class="text-sm text-gray-500 font-medium">
+                        (2021-2022) | Represented school in badminton till state level.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="experience" class="py-20 bg-white">
+    <section id="experience" class="py-24 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-gray-800 mb-2">Experience</h2>
-                <div class="w-20 h-1 bg-green-500 mx-auto"></div>
+                <h2 class="text-4xl font-extrabold text-gray-800 mb-4">Experience 💼</h2>
+                <div class="w-16 h-1.5 bg-green-500 mx-auto rounded-full"></div>
             </div>
-            <div class="space-y-8">
-                <div class="card-glass p-8 rounded-lg shadow-md" data-aos="fade-up">
-                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                        <div>
-                            <h3 class="text-xl font-semibold text-gray-800">Summer Trainee, IT</h3>
-                            <p class="text-green-600">Bharat Heavy Electricals Ltd., Jhansi</p>
-                        </div>
-                        <div class="mt-2 md:mt-0">
-                            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">June 2024 – July 2024</span>
-                        </div>
-                    </div>
-                    <ul class="list-disc pl-5 text-gray-700 space-y-2">
-                        <li>Developed an automated system of digital printing using PHP, HTML, CSS, JavaScript.</li>
-                        <li>Documented the nature of all the working departments by a report.</li>
-                    </ul>
-                </div>
-                <div class="card-glass p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
-                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                        <div>
-                            <h3 class="text-xl font-semibold text-gray-800">Anchor Lead</h3>
-                            <p class="text-green-600">C Square, Chandigarh University</p>
-                        </div>
-                        <div class="mt-2 md:mt-0">
-                            <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Aug 2023 – Present</span>
+            <div class="relative max-w-4xl mx-auto">
+                <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-green-200 hidden md:block"></div>
+                
+                <div class="flex md:justify-end mb-12" data-aos="fade-right">
+                    <div class="md:w-1/2 md:pr-12">
+                        <div class="card-glass p-6 rounded-xl shadow-lg relative md:before:content-[''] md:before:absolute md:before:top-6 md:before:right-[-14px] md:before:w-6 md:before:h-6 md:before:bg-green-500 md:before:rounded-full md:before:border-4 md:before:border-white">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-gray-800">Summer Trainee, IT</h3>
+                                <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs font-semibold">June – July 2024</span>
+                            </div>
+                            <p class="text-green-600 font-medium mb-3">Bharat Heavy Electricals Ltd., Jhansi</p>
+                            <ul class="list-disc pl-5 text-gray-700 space-y-2 text-sm">
+                                <li>Developed an **automated digital printing system** using **PHP, HTML, CSS, JavaScript**.</li>
+                                <li>Documented working procedures of all departments via a comprehensive report.</li>
+                            </ul>
                         </div>
                     </div>
-                    <ul class="list-disc pl-5 text-gray-700 space-y-2">
-                        <li>Organized and coordinated in 20+ events, including workshops, hackathons and peer learning sessions contributing in the management and coordination.</li>
-                        <li>Developed and maintained the club's website.</li>
-                    </ul>
                 </div>
+                
+                <div class="flex md:justify-start mb-12" data-aos="fade-left">
+                    <div class="md:w-1/2 md:pl-12">
+                        <div class="card-glass p-6 rounded-xl shadow-lg relative md:before:content-[''] md:before:absolute md:before:top-6 md:before:left-[-14px] md:before:w-6 md:before:h-6 md:before:bg-green-500 md:before:rounded-full md:before:border-4 md:before:border-white">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-gray-800">Anchor Lead</h3>
+                                <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs font-semibold">Aug 2023 – Present</span>
+                            </div>
+                            <p class="text-green-600 font-medium mb-3">C Square, Chandigarh University</p>
+                            <ul class="list-disc pl-5 text-gray-700 space-y-2 text-sm">
+                                <li>Organized and coordinated **20+ events** (workshops, hackathons, peer sessions).</li>
+                                <li>Developed and maintained the club's official website, enhancing outreach.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </section>
 
-    <section id="projects" class="py-20 bg-gray-50">
+    <section id="projects" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-gray-800 mb-2">Projects</h2>
-                <div class="w-20 h-1 bg-green-500 mx-auto"></div>
+                <h2 class="text-4xl font-extrabold text-gray-800 mb-4">Key Projects 🚀</h2>
+                <div class="w-16 h-1.5 bg-green-500 mx-auto rounded-full"></div>
             </div>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="card-glass p-8 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105" data-aos="fade-up">
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <div class="card-glass p-8 rounded-xl shadow-lg" data-aos="fade-up">
                     <div class="flex items-center mb-4">
-                        <div class="bg-green-100 p-3 rounded-full mr-4">
-                            <i data-feather="bar-chart-2" class="text-green-600"></i>
+                        <div class="bg-green-500 p-3 rounded-full mr-4 flex-shrink-0">
+                            <i data-feather="bar-chart-2" class="text-white h-6 w-6"></i>
                         </div>
-                        <h3 class="text-xl font-semibold text-gray-800">House Price Prediction</h3>
+                        <h3 class="text-xl font-bold text-gray-800">House Price Prediction (ML)</h3>
                     </div>
                     <p class="text-gray-700 mb-4">
-                        Uses key house attributes to train machine learning models for predicting prices.
+                        Trained machine learning models using key house attributes to accurately predict property prices.
                     </p>
-                    <ul class="list-disc pl-5 text-gray-700 space-y-2 mb-4">
-                        <li>Involves cleaning data, handling missing values and visualizing trends.</li>
-                        <li>Tests various regression models with python.</li>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-2 mb-4 text-sm">
+                        <li>**Data Processing:** Focused on cleaning, handling missing values, and visualizing trends.</li>
+                        <li>**Model Testing:** Tested various **regression models** using Python (Scikit-learn).</li>
                     </ul>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Python</span>
-                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Pandas</span>
-                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Scikit-learn</span>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">Python</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">Pandas</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">Scikit-learn</span>
                     </div>
-                    <a href="#" class="mt-4 inline-block bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition-all duration-300 transform hover:scale-105">View Project</a>
+                    <a href="#" target="_blank" class="inline-block bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition font-semibold flex items-center w-fit">
+                        <i data-feather="external-link" class="mr-2 h-4 w-4"></i> View Code
+                    </a>
                 </div>
     
-                <div class="card-glass p-8 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-glass p-8 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="150">
                     <div class="flex items-center mb-4">
-                        <div class="bg-green-100 p-3 rounded-full mr-4">
-                            <i data-feather="printer" class="text-green-600"></i>
+                        <div class="bg-green-500 p-3 rounded-full mr-4 flex-shrink-0">
+                            <i data-feather="printer" class="text-white h-6 w-6"></i>
                         </div>
-                        <h3 class="text-xl font-semibold text-gray-800">Remote Printing (BHEL)</h3>
+                        <h3 class="text-xl font-bold text-gray-800">Remote Printing System (BHEL)</h3>
                     </div>
                     <p class="text-gray-700 mb-4">
-                        Developed an automated system of digital printing through a centralized website.
+                        Developed an automated, centralized digital printing system during my BHEL traineeship.
                     </p>
-                    <ul class="list-disc pl-5 text-gray-700 space-y-2 mb-4">
-                        <li>Enhanced system security by incorporating user authentication and access control features.</li>
-                        <li>Ensured the integrity of asset data.</li>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-2 mb-4 text-sm">
+                        <li>**Security:** Incorporated **user authentication** and access control for enhanced system security.</li>
+                        <li>**Integrity:** Focused on robust design to ensure the integrity of critical asset data.</li>
                     </ul>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">PHP</span>
-                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">HTML/CSS</span>
-                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">JavaScript</span>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">PHP</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">HTML/CSS</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">JavaScript</span>
                     </div>
-                    <a href="#" class="mt-4 inline-block bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition-all duration-300 transform hover:scale-105">View Project</a>
+                    <a href="#" target="_blank" class="inline-block bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition font-semibold flex items-center w-fit">
+                        <i data-feather="external-link" class="mr-2 h-4 w-4"></i> View Project
+                    </a>
                 </div>
                 
-                <div class="card-glass p-8 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-glass p-8 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
                     <div class="flex items-center mb-4">
-                        <div class="bg-green-100 p-3 rounded-full mr-4">
-                            <i data-feather="pie-chart" class="text-green-600"></i>
+                        <div class="bg-green-500 p-3 rounded-full mr-4 flex-shrink-0">
+                            <i data-feather="pie-chart" class="text-white h-6 w-6"></i>
                         </div>
-                        <h3 class="text-xl font-semibold text-gray-800">Pizza Sales Analysis</h3>
+                        <h3 class="text-xl font-bold text-gray-800">Pizza Sales Analysis (Data Viz)</h3>
                     </div>
                     <p class="text-gray-700 mb-4">
-                        Utilized SQL to analyze sales data by modelled queries for extracting insights.
+                        Conducted an end-to-end sales analysis, from data extraction to dashboard creation.
                     </p>
-                    <ul class="list-disc pl-5 text-gray-700 space-y-2 mb-4">
-                        <li>Created tableau dashboards to visualize key market trends.</li>
-                        <li>Provided data driven answers to business questions.</li>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-2 mb-4 text-sm">
+                        <li>**Data Querying:** Utilized **SQL** to model queries for efficient data extraction and insights.</li>
+                        <li>**Visualization:** Created interactive **Tableau dashboards** to highlight key market trends.</li>
                     </ul>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">SQL</span>
-                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Tableau</span>
-                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Data Analysis</span>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">SQL</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">Tableau</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">Data Analysis</span>
                     </div>
-                    <a href="#" class="mt-4 inline-block bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition-all duration-300 transform hover:scale-105">View Project</a>
+                    <a href="#" target="_blank" class="inline-block bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition font-semibold flex items-center w-fit">
+                        <i data-feather="external-link" class="mr-2 h-4 w-4"></i> View Dashboard
+                    </a>
                 </div>
                 
-                <div class="card-glass p-8 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105" data-aos="fade-up" data-aos-delay="300">
+                <div class="card-glass p-8 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="450">
                     <div class="flex items-center mb-4">
-                        <div class="bg-green-100 p-3 rounded-full mr-4">
-                            <i data-feather="dollar-sign" class="text-green-600"></i>
+                        <div class="bg-green-500 p-3 rounded-full mr-4 flex-shrink-0">
+                            <i data-feather="dollar-sign" class="text-white h-6 w-6"></i>
                         </div>
-                        <h3 class="text-xl font-semibold text-gray-800">Banking Analysis</h3>
+                        <h3 class="text-xl font-bold text-gray-800">Banking Risk Analysis (Python)</h3>
                     </div>
                     <p class="text-gray-700 mb-4">
-                        Applies Python to analyze customer leading data, identifying risks.
+                        Applied Python for analyzing customer lending data to identify and quantify financial risks.
                     </p>
-                    <ul class="list-disc pl-5 text-gray-700 space-y-2 mb-4">
-                        <li>Developed risk analytics model to help minimize financial loss in leading decision.</li>
-                        <li>Used Pandas, NumPy, Matplotlib for analysis.</li>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-2 mb-4 text-sm">
+                        <li>**Risk Modeling:** Developed a **risk analytics model** to minimize financial loss in lending decisions.</li>
+                        <li>**Tools:** Leveraged **Pandas, NumPy, and Matplotlib** for core analysis and visualization.</li>
                     </ul>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Python</span>
-                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Pandas</span>
-                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Data Visualization</span>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">Python</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">Pandas</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">Data Visualization</span>
                     </div>
-                    <a href="#" class="mt-4 inline-block bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition-all duration-300 transform hover:scale-105">View Project</a>
+                    <a href="#" target="_blank" class="inline-block bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition font-semibold flex items-center w-fit">
+                        <i data-feather="external-link" class="mr-2 h-4 w-4"></i> View Code
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-20 bg-white">
+    <section class="py-24 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-gray-800 mb-2">Skills</h2>
-                <div class="w-20 h-1 bg-green-500 mx-auto"></div>
+                <h2 class="text-4xl font-extrabold text-gray-800 mb-4">Technical Skills ✨</h2>
+                <div class="w-16 h-1.5 bg-green-500 mx-auto rounded-full"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="card-glass p-6 rounded-xl shadow-lg" data-aos="fade-up">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center border-b pb-2 border-green-200">
+                        <i data-feather="code" class="text-green-500 mr-3 h-5 w-5"></i> Programming Languages
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-pill px-4 py-2 bg-gray-100 text-gray-800 rounded-full text-sm font-medium">Python</span>
+                        <span class="skill-pill px-4 py-2 bg-gray-100 text-gray-800 rounded-full text-sm font-medium">SQL</span>
+                        <span class="skill-pill px-4 py-2 bg-gray-100 text-gray-800 rounded-full text-sm font-medium">C/C++</span>
+                        <span class="skill-pill px-4 py-2 bg-gray-100 text-gray-800 rounded-full text-sm font-medium">Java</span>
+                        <span class="skill-pill px-4 py-2 bg-gray-100 text-gray-800 rounded-full text-sm font-medium">JavaScript</span>
+                        <span class="skill-pill px-4 py-2 bg-gray-100 text-gray-800 rounded-full text-sm font-medium">HTML/CSS</span>
+                    </div>
+                </div>
+                <div class="card-glass p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="150">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center border-b pb-2 border-green-200">
+                        <i data-feather="database" class="text-green-500 mr-3 h-5 w-5"></i> Data & Analytics
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-pill px-4 py-2 bg-gray-100 text-gray-800 rounded-full text-sm font-medium">Pandas</span>
+                        <span class="skill-pill px-4 py-2 bg-gray-100 text-gray-800 rounded-full text-sm font-medium">NumPy</span>
+                        <span class="skill-pill px-4 py-2 bg-gray-100 text-gray-800 rounded-full text-sm font-medium">Tableau</span>
+                        <span class="skill-pill px-4 py-2 bg-gray-100 text-gray-800 rounded-full text-sm font-medium">Power BI</span>
+                        <span class="skill-pill px-4 py-2 bg-gray-100 text-gray-800 rounded-full text-sm font-medium">Matplotlib</span>
+                        <span class="skill-pill px-4 py-2 bg-gray-100 text-gray-800 rounded-full text-sm font-medium">Seaborn</span>
+                        <span class="skill-pill px-4 py-2 bg-gray-100 text-gray-800 rounded-full text-sm font-medium">Excel</span>
+                    </div>
+                </div>
+                <div class="card-glass p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center border-b pb-2 border-green-200">
+                        <i data-feather="tool" class="text-green-500 mr-3 h-5 w-5"></i> Tools & Cloud
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-pill px-4 py-2 bg-gray-100 text-gray-800 rounded-full text-sm font-medium">Git / GitHub</span>
+                        <span class="skill-pill px-4 py-2 bg-gray-100 text-gray-800 rounded-full text-sm font-medium">Jupyter</span>
+                        <span class="skill-pill px-4 py-2 bg-gray-100 text-gray-800 rounded-full text-sm font-medium">AWS (S3, Athena)</span>
+                        <span class="skill-pill px-4 py-2 bg-gray-100 text-gray-800 rounded-full text-sm font-medium">PHP</span>
+                        <span class="skill-pill px-4 py-2 bg-gray-100 text-gray-800 rounded-full text-sm font-medium">IoT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold text-gray-800 mb-4">Certifications 🏅</h2>
+                <div class="w-16 h-1.5 bg-green-500 mx-auto rounded-full"></div>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
-                <div data-aos="fade-up">
-                    <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
-                        <i data-feather="code" class="text-green-500 mr-2"></i> Programming
-                    </h3>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="skill-pill px-4 py-2 bg-gray-100 text-gray-800 rounded-full">Python</span>
-                        <span class="skill-pill px-4 py-2 bg-gray-100 text-gray-800 rounded-full">SQL</span>
-                        <span class="skill-pill px-4 py-2 bg-gray-100 text-gray-800 rounded-full">C/C++</span>
-                        <span class="skill-pill px-4 py-2 bg-gray-100 text-gray-800 rounded-full">Java</span>
-                        <span class="skill-pill px-4 py-2 bg-gray-100 text-gray-800 rounded-full">JavaScript</span>
-                        <span class="skill-pill px-4 py-2 bg-gray-100 text-gray-800 rounded-full">HTML/CSS</span>
-                    </div>
-                </div>
-                <div data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
-                        <i data-feather="database" class="text-green-500 mr-2"></i> Data Analysis
-                    </h3>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="skill-pill px-4 py-2 bg-gray-100 text-gray-800 rounded-full">Pandas</span>
-                        <span class="skill-pill px-4 py-2 bg-gray-100 text-gray-800 rounded-full">NumPy</span>
-                        <span class="skill-pill px-4 py-2 bg-gray-100 text-gray-800 rounded-full">Matplotlib</span>
-                        <span class="skill-pill px-4 py-2 bg-gray-100 text-gray-800 rounded-full">Seaborn</span>
-                        <span class="skill-pill px-4 py-2 bg-gray-100 text-gray-800 rounded-full">Tableau</span>
-                        <span class="skill-pill px-4 py-2 bg-gray-100 text-gray-800 rounded-full">Power BI</span>
-                        <span class="skill-pill px-4 py-2 bg-gray-100 text-gray-800 rounded-full">Excel</span>
-                    </div>
-                </div>
-                <div data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
-                        <i data-feather="tool" class="text-green-500 mr-2"></i> Tools & Technologies
-                    </h3>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="skill-pill px-4 py-2 bg-gray-100 text-gray-800 rounded-full">Git</span>
-                        <span class="skill-pill px-4 py-2 bg-gray-100 text-gray-800 rounded-full">Jupyter</span>
-                        <span class="skill-pill px-4 py-2 bg-gray-100 text-gray-800 rounded-full">AWS</span>
-                        <span class="skill-pill px-4 py-2 bg-gray-100 text-gray-800 rounded-full">IoT</span>
-                        <span class="skill-pill px-4 py-2 bg-gray-100 text-gray-800 rounded-full">PHP</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-gray-800 mb-2">Certifications</h2>
-                <div class="w-20 h-1 bg-green-500 mx-auto"></div>
-            </div>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="card-glass p-8 rounded-lg shadow-md" data-aos="fade-up">
-                    <div class="flex items-center mb-4">
-                        <div class="bg-green-100 p-3 rounded-full mr-4">
-                            <i data-feather="award" class="text-green-600"></i>
+                <div class="card-glass p-6 rounded-xl shadow-lg" data-aos="fade-up">
+                    <div class="flex items-start mb-3">
+                        <div class="bg-green-500 p-3 rounded-xl mr-4 flex-shrink-0">
+                            <i data-feather="award" class="text-white h-5 w-5"></i>
                         </div>
                         <div>
-                            <h3 class="text-xl font-semibold text-gray-800">Google Data Analytics Professional Certificate</h3>
-                            <p class="text-gray-600">July 2025 – August 2025</p>
+                            <h3 class="text-lg font-bold text-gray-800">Google Data Analytics Professional Certificate</h3>
+                            <p class="text-sm text-green-600 font-medium">July – August 2025</p>
                         </div>
                     </div>
-                    <p class="text-gray-700">
-                        Gained hands on experience with SQL, spreadsheets, Tableau, R programming to clean, analyze and visualize data.
+                    <p class="text-gray-700 text-sm">
+                        Gained hands-on expertise with **SQL, Spreadsheets, Tableau, and R programming** for data cleaning, analysis, and visualization.
                     </p>
                 </div>
-                <div class="card-glass p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
-                    <div class="flex items-center mb-4">
-                        <div class="bg-green-100 p-3 rounded-full mr-4">
-                            <i data-feather="briefcase" class="text-green-600"></i>
+                <div class="card-glass p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="150">
+                    <div class="flex items-start mb-3">
+                        <div class="bg-green-500 p-3 rounded-xl mr-4 flex-shrink-0">
+                            <i data-feather="briefcase" class="text-white h-5 w-5"></i>
                         </div>
                         <div>
-                            <h3 class="text-xl font-semibold text-gray-800">Deloitte Data Analytics Job Simulation</h3>
-                            <p class="text-gray-600">July 2025</p>
+                            <h3 class="text-lg font-bold text-gray-800">Deloitte Data Analytics Job Simulation</h3>
+                            <p class="text-sm text-green-600 font-medium">July 2025</p>
                         </div>
                     </div>
-                    <p class="text-gray-700">
-                        Applied SQL and Tableau to analyze and visualize client's data delivering actionable insights.
+                    <p class="text-gray-700 text-sm">
+                        Applied **SQL and Tableau** to analyze and visualize client data, delivering actionable business insights and recommendations.
                     </p>
                 </div>
-                <div class="card-glass p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
-                    <div class="flex items-center mb-4">
-                        <div class="bg-green-100 p-3 rounded-full mr-4">
-                            <i data-feather="cloud" class="text-green-600"></i>
+                <div class="card-glass p-6 rounded-xl shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-start mb-3">
+                        <div class="bg-green-500 p-3 rounded-xl mr-4 flex-shrink-0">
+                            <i data-feather="cloud" class="text-white h-5 w-5"></i>
                         </div>
                         <div>
-                            <h3 class="text-xl font-semibold text-gray-800">Getting Started with Data Analytics on AWS</h3>
-                            <p class="text-gray-600">September 2025</p>
+                            <h3 class="text-lg font-bold text-gray-800">Getting Started with Data Analytics on AWS</h3>
+                            <p class="text-sm text-green-600 font-medium">September 2025</p>
                         </div>
                     </div>
-                    <p class="text-gray-700">
-                        Gained hands-on exposure to S3, Glue, Athena and QuickSight for cloud based analytics.
+                    <p class="text-gray-700 text-sm">
+                        Hands-on exposure to cloud-based analytics using **AWS services** like S3, Glue, Athena, and QuickSight.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-20 bg-white">
+    <section id="contact" class="py-24 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-gray-800 mb-2">Get In Touch</h2>
-                <div class="w-20 h-1 bg-green-500 mx-auto"></div>
+                <h2 class="text-4xl font-extrabold text-gray-800 mb-4">Get In Touch 👋</h2>
+                <div class="w-16 h-1.5 bg-green-500 mx-auto rounded-full"></div>
             </div>
-            <div class="grid md:grid-cols-2 gap-12">
+            <div class="grid md:grid-cols-2 gap-12 bg-white p-10 rounded-xl shadow-2xl">
                 <div data-aos="fade-right">
-                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Contact Information</h3>
-                    <div class="space-y-4">
-                        <div class="flex items-start">
-                            <div class="bg-green-100 p-3 rounded-full mr-4">
-                                <i data-feather="mail" class="text-green-600"></i>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6 border-b pb-3 border-green-100">Contact Information</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start p-3 bg-green-50 rounded-lg">
+                            <div class="p-3 rounded-full mr-4 bg-green-500">
+                                <i data-feather="mail" class="text-white h-5 w-5"></i>
                             </div>
                             <div>
-                                <h4 class="font-medium text-gray-800">Email</h4>
+                                <h4 class="font-bold text-gray-800">Email</h4>
                                 <p class="text-gray-600">aishwaryakashy@gmail.com</p>
                             </div>
                         </div>
-                        <div class="flex items-start">
-                            <div class="bg-green-100 p-3 rounded-full mr-4">
-                                <i data-feather="phone" class="text-green-600"></i>
+                        <div class="flex items-start p-3 bg-green-50 rounded-lg">
+                            <div class="p-3 rounded-full mr-4 bg-green-500">
+                                <i data-feather="phone" class="text-white h-5 w-5"></i>
                             </div>
                             <div>
-                                <h4 class="font-medium text-gray-800">Phone</h4>
+                                <h4 class="font-bold text-gray-800">Phone</h4>
                                 <p class="text-gray-600">+91 9336463293</p>
                             </div>
                         </div>
-                        <div class="flex items-start">
-                            <div class="bg-green-100 p-3 rounded-full mr-4">
-                                <i data-feather="map-pin" class="text-green-600"></i>
+                        <div class="flex items-start p-3 bg-green-50 rounded-lg">
+                            <div class="p-3 rounded-full mr-4 bg-green-500">
+                                <i data-feather="map-pin" class="text-white h-5 w-5"></i>
                             </div>
                             <div>
-                                <h4 class="font-medium text-gray-800">Location</h4>
+                                <h4 class="font-bold text-gray-800">Location</h4>
                                 <p class="text-gray-600">Jhansi, Uttar Pradesh, India</p>
                             </div>
                         </div>
                     </div>
-                    <div class="mt-8">
-                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Connect With Me</h3>
+                    <div class="mt-10">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Connect With Me</h3>
                         <div class="flex space-x-4">
-                            <a href="https://www.linkedin.com/in/aishwarya-kashyap-737a22251/" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 hover:bg-green-100 hover:text-green-600 transition">
-                                <i data-feather="linkedin"></i>
+                            <a href="https://www.linkedin.com/in/aishwarya-kashyap-737a22251/" target="_blank" class="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center text-gray-700 hover:bg-green-500 hover:text-white transition transform hover:scale-110 shadow-md">
+                                <i data-feather="linkedin" class="w-6 h-6"></i>
                             </a>
-                            <a href="https://github.com/Aishkash" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 hover:bg-green-100 hover:text-green-600 transition">
-                                <i data-feather="github"></i>
-                            </a>
-                            <!-- <a href="#" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-700 hover:bg-green-100 hover:text-green-600 transition">
-                                <i data-feather="twitter"></i> -->
+                            <a href="https://github.com/Aishkash" target="_blank" class="w-12 h-12 rounded-full bg-gray-200 flex items-center justify-center text-gray-700 hover:bg-green-500 hover:text-white transition transform hover:scale-110 shadow-md">
+                                <i data-feather="github" class="w-6 h-6"></i>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div data-aos="fade-left">
-                    <form class="space-y-4">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6 border-b pb-3 border-green-100">Send Me a Message</h3>
+                    <form class="space-y-5">
                         <div>
-                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
-                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                            <label for="name" class="block text-sm font-semibold text-gray-700 mb-1">Name</label>
+                            <input type="text" id="name" placeholder="Your Name" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-green-500 transition">
                         </div>
                         <div>
-                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                            <label for="email" class="block text-sm font-semibold text-gray-700 mb-1">Email</label>
+                            <input type="email" id="email" placeholder="Your Email Address" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-green-500 transition">
                         </div>
                         <div>
-                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
-                            <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500">
+                            <label for="message" class="block text-sm font-semibold text-gray-700 mb-1">Message</label>
+                            <textarea id="message" rows="5" placeholder="Let's connect..." class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-green-500 transition"></textarea>
                         </div>
-                        <div>
-                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
-                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500"></textarea>
-                        </div>
-                        <button type="submit" class="w-full px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition duration-300 flex items-center justify-center">
-                            <i data-feather="send" class="mr-2"></i> Send Message
+                        <button type="submit" class="w-full px-6 py-3 bg-green-600 text-white rounded-xl font-bold hover:bg-green-700 transition duration-300 shadow-lg shadow-green-500/50 flex items-center justify-center transform hover:scale-[1.01]">
+                            <i data-feather="send" class="mr-2 h-5 w-5"></i> Send Message
                         </button>
                     </form>
                 </div>
@@ -473,27 +484,31 @@
         </div>
     </section>
 
-    <footer class="py-8 bg-gray-800 text-white">
+    <footer class="py-10 bg-gray-900 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-4 md:mb-0">
-                    <span class="text-xl font-bold text-green-400">Aishwarya Kashyap</span>
-                    <p class="text-gray-400 mt-1">Computer Science Engineer | Data Analyst | Web Developer</p>
+                <div class="mb-4 md:mb-0 text-center md:text-left">
+                    <span class="text-2xl font-bold text-green-400">Aishwarya Kashyap</span>
+                    <p class="text-gray-400 text-sm mt-1">Computer Science Engineer | Data Analyst</p>
                 </div>
-                <div class="flex space-x-6">
-                    <a href="#home" class="text-gray-400 hover:text-white transition">Home</a>
-                    <a href="#about" class="text-gray-400 hover:text-white transition">About</a>
-                    <a href="#experience" class="text-gray-400 hover:text-white transition">Experience</a>
-                    <a href="#projects" class="text-gray-400 hover:text-white transition">Projects</a>
-                    <a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a>
+                <div class="flex space-x-6 text-sm">
+                    <a href="#home" class="text-gray-400 hover:text-green-400 transition">Home</a>
+                    <a href="#about" class="text-gray-400 hover:text-green-400 transition">About</a>
+                    <a href="#projects" class="text-gray-400 hover:text-green-400 transition">Projects</a>
+                    <a href="#contact" class="text-gray-400 hover:text-green-400 transition">Contact</a>
                 </div>
             </div>
-            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
-                <p>&copy; 2024 Aishwarya Kashyap. All rights reserved.</p>
+            <div class="mt-8 pt-6 border-t border-gray-700/50 text-center text-gray-500 text-xs">
+                <p>&copy; 2024 Aishwarya Kashyap. Built with Tailwind CSS & ❤️</p>
             </div>
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
     <script src="script.js"></script>
+    
 </body>
 </html>

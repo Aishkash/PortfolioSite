@@ -1,77 +1,89 @@
 AOS.init({
-    duration: 800,
-    easing: 'ease-in-out',
-    once: true
+    duration: 1000, // Longer duration for smoother effect
+    easing: 'ease-out-back', // More appealing easing
+    once: true,
+    delay: 50 // Slight delay on all animations
 });
 feather.replace();
 
 // Mobile menu toggle
 document.querySelector('.mobile-menu-button').addEventListener('click', function() {
-    document.querySelector('.md\\:flex').classList.toggle('hidden');
+    // Toggle the mobile menu container
+    document.querySelector('.mobile-menu').classList.toggle('hidden');
 });
 
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
+        // Hide mobile menu on click
+        document.querySelector('.mobile-menu')?.classList.add('hidden'); 
         document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth'
         });
     });
 });
-// Add this new function to your existing script.js file
+
+// Navigation scroll effects: Added backdrop-filter for a modern frosted look
 window.addEventListener('scroll', function() {
     const nav = document.querySelector('nav');
     if (window.scrollY > 50) {
-      nav.classList.add('bg-opacity-90', 'backdrop-blur-sm', 'shadow-lg');
+      nav.classList.add('bg-opacity-95', 'backdrop-blur-sm', 'shadow-lg');
       nav.classList.remove('bg-opacity-100');
     } else {
-      nav.classList.remove('bg-opacity-90', 'backdrop-blur-sm', 'shadow-lg');
+      nav.classList.remove('bg-opacity-95', 'backdrop-blur-sm', 'shadow-lg');
       nav.classList.add('bg-opacity-100');
     }
   });
-  // Add this at the end of your script.js file
+
+// Particles.js configuration
 particlesJS('particles-js', {
     "particles": {
       "number": {
-        "value": 80,
+        "value": 60, // Fewer particles for a cleaner look
         "density": {
           "enable": true,
           "value_area": 800
         }
       },
       "color": {
-        "value": "#ffffff"
+        "value": "#d1fae5" // Light green/white color
       },
       "shape": {
         "type": "circle"
       },
       "opacity": {
-        "value": 0.5,
-        "random": false,
+        "value": 0.6,
+        "random": true,
         "anim": {
-          "enable": false
+          "enable": true, // Enable slight animation on opacity
+          "speed": 1,
+          "opacity_min": 0.1,
+          "sync": false
         }
       },
       "size": {
-        "value": 3,
+        "value": 4,
         "random": true,
         "anim": {
-          "enable": false
+          "enable": true, // Enable slight animation on size
+          "speed": 2,
+          "size_min": 0.1,
+          "sync": false
         }
       },
       "line_linked": {
         "enable": true,
         "distance": 150,
-        "color": "#ffffff",
+        "color": "#e0f7e9", // Light line color
         "opacity": 0.4,
         "width": 1
       },
       "move": {
         "enable": true,
-        "speed": 6,
+        "speed": 3, // Slower movement
         "direction": "none",
-        "random": false,
+        "random": true,
         "straight": false,
         "out_mode": "out",
         "bounce": false
@@ -82,7 +94,7 @@ particlesJS('particles-js', {
       "events": {
         "onhover": {
           "enable": true,
-          "mode": "repulse"
+          "mode": "grab" // 'Grab' is more interactive
         },
         "onclick": {
           "enable": true,
@@ -91,9 +103,14 @@ particlesJS('particles-js', {
         "resize": true
       },
       "modes": {
-        "repulse": {
-          "distance": 100,
-          "duration": 0.4
+        "grab": {
+            "distance": 200,
+            "line_linked": {
+                "opacity": 1
+            }
+        },
+        "push": {
+          "particles_nb": 4
         }
       }
     }
