@@ -115,3 +115,41 @@ particlesJS('particles-js', {
       }
     }
   });
+
+// Initialize EmailJS with your public key
+(function() {
+  emailjs.init("b0VxpN2LhYrhV8Yw_"); // 🔹 replace with your EmailJS Public Key
+})();
+
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.getElementById("contact-form");
+  const status = document.getElementById("status");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    // Change button text or show status
+    status.textContent = "Sending...";
+
+    const params = {
+      from_name: document.getElementById("name").value,
+      from_email: document.getElementById("email").value,
+      message: document.getElementById("message").value,
+    };
+
+    // Send email via EmailJS
+    emailjs.send("service_cxl50jr", "template_1853bmk", params)
+      .then(() => {
+        status.textContent = "✅ Message sent successfully!";
+        status.classList.remove("text-red-600");
+        status.classList.add("text-green-600");
+        form.reset();
+      })
+      .catch((error) => {
+        console.error("EmailJS error:", error);
+        status.textContent = "❌ Failed to send. Try again later.";
+        status.classList.remove("text-green-600");
+        status.classList.add("text-red-600");
+      });
+  });
+});
