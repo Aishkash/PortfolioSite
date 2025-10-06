@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", function() {
     };
 
     // Send email via EmailJS
-    emailjs.send("service_cxl50jr", "template_1853bmk", params)
+    emailjs.send("service_cxl50jr", "template_rtc9fvt", params)
       .then(() => {
         status.textContent = "✅ Message sent successfully!";
         status.classList.remove("text-red-600");
