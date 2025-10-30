@@ -117,39 +117,67 @@ particlesJS('particles-js', {
   });
 
 // Initialize EmailJS with your public key
-(function() {
-  emailjs.init("b0VxpN2LhYrhV8Yw_"); // 🔹 replace with your EmailJS Public Key
-})();
+// --- EMAILJS CREDENTIALS ---
+const SERVICE_ID = 'service_cxl50jr';
+const TEMPLATE_ID = 'template_rtc9fvt';
+const PUBLIC_KEY = 'b0VxpN2LhYrhV8Yw_';
 
-document.addEventListener("DOMContentLoaded", function() {
-  const form = document.getElementById("contact-form");
-  const status = document.getElementById("status");
+// Initialize EmailJS with your Public Key
+emailjs.init(PUBLIC_KEY);
 
-  form.addEventListener("submit", function(e) {
-    e.preventDefault();
 
-    // Change button text or show status
-    status.textContent = "Sending...";
 
-    const params = {
-      from_name: document.getElementById("name").value,
-      from_email: document.getElementById("email").value,
-      message: document.getElementById("message").value,
-    };
+const contactForm = document.getElementById('contact-form');
+const statusMessage = document.getElementById('status-message');
+const submitButton = document.getElementById('submit-button');
 
-    // Send email via EmailJS
-    emailjs.send("service_cxl50jr", "template_rtc9fvt", params)
-      .then(() => {
-        status.textContent = "✅ Message sent successfully!";
-        status.classList.remove("text-red-600");
-        status.classList.add("text-green-600");
-        form.reset();
-      })
-      .catch((error) => {
-        console.error("EmailJS error:", error);
-        status.textContent = "❌ Failed to send. Try again later.";
-        status.classList.remove("text-green-600");
-        status.classList.add("text-red-600");
-      });
-  });
+
+contactForm.addEventListener('submit', function(e) {
+    e.preventDefault(); 
+    
+    // 1. Update UI for sending state
+    submitButton.innerHTML = '<i data-feather="loader" class="mr-2 h-5 w-5 animate-spin"></i> Sending...';
+    submitButton.disabled = true;
+    statusMessage.textContent = 'Sending message...';
+    statusMessage.classList.remove('text-red-600', 'text-green-600');
+    statusMessage.classList.add('text-gray-500');
+
+
+    // 2. Send the form data using EmailJS
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, contactForm)
+        .then((response) => {
+            // Success
+            console.log('SUCCESS!', response.status, response.text);
+            
+            // Clear form and show success message
+            contactForm.reset();
+            statusMessage.textContent = 'Message sent successfully! Thank you. 😊';
+            statusMessage.classList.remove('text-gray-500');
+            statusMessage.classList.add('text-green-600');
+            
+            // 3. Reset button after a delay
+            setTimeout(() => {
+                submitButton.innerHTML = '<i data-feather="send" class="mr-2 h-5 w-5"></i> Send Message';
+                submitButton.disabled = false;
+                feather.replace(); // Re-initialize icons
+                statusMessage.textContent = '';
+            }, 3000);
+            
+        }, (error) => {
+            // Failure
+            console.error('FAILED...', error);
+            
+            // Show failure message
+            statusMessage.textContent = 'FAILED to send. Please check your network and try again.';
+            statusMessage.classList.remove('text-gray-500');
+            statusMessage.classList.add('text-red-600');
+            
+            // 3. Reset button immediately
+            submitButton.innerHTML = '<i data-feather="send" class="mr-2 h-5 w-5"></i> Send Message';
+            submitButton.disabled = false;
+            feather.replace(); // Re-initialize icons
+        });
 });
+
+// NOTE: Ensure feather.replace() is called globally on page load 
+// to render the send icon and the loader animation.
